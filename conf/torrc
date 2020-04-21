@@ -1,0 +1,36 @@
+#SOCKSPort 9050 # Default: Bind to localhost:9050 for local connections.
+#SOCKSPort 192.168.0.1:9100 # Bind to this address:port too.
+#SOCKSPolicy accept 192.168.0.0/16
+#SOCKSPolicy accept6 FC00::/7
+#SOCKSPolicy reject *
+#ControlPort 9051
+#HashedControlPassword 16:872860B76453A77D60CA2BB8C1A7042072093276A3D701AD684053EC4C
+#CookieAuthentication 1
+
+############### This section is just for location-hidden services ###
+
+#HiddenServiceDir @LOCALSTATEDIR@/lib/tor/hidden_service/
+#HiddenServicePort 80 127.0.0.1:80
+
+#HiddenServiceDir @LOCALSTATEDIR@/lib/tor/other_hidden_service/
+#HiddenServicePort 80 127.0.0.1:80
+#HiddenServicePort 22 127.0.0.1:22
+
+################ This section is just for relays #####################
+ORPort 9001
+#Address noname.example.com
+Nickname ididnteditheconfig
+ContactInfo alsothecontactinfoiforgot
+#RelayBandwidthRate 100 KBytes  # Throttle traffic to 100KB/s (800Kbps)
+#RelayBandwidthBurst 200 KBytes # But allow bursts up to 200KB (1600Kb)
+#MaxCircuitDirtiness 10 minutes
+#BandwidthRate 1 GB
+#BandwidthBurst 1 GB
+#AccountingMax 40 GBytes
+#AccountingStart day 00:00
+#AccountingStart month 3 15:00
+DirPort 9030
+#MyFamily $keyid,$keyid,...
+#ExitRelay 1
+ExitPolicy reject *:*
+#BridgeRelay 1
