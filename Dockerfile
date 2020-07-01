@@ -2,8 +2,8 @@ FROM alpine:latest
 
 RUN apk add --update --no-cache \
   tor \
-  python \
-  python-dev \
+  python3-dev \
+  python3 \
   py-pip \
   build-base && \
   pip install nyx
