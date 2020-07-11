@@ -1,17 +1,17 @@
-version: '3.3'
+version: "3.3"
 services:
-    tor-relay:
-        ports:
-            - '127.0.0.1:9050:9050'
-            - '9001:9001'
-            - '9030:9030'
-            - '127.0.0.1:9051:9051'
-        volumes:
-            - './conf/torrc:/etc/tor/torrc'
-            - '/etc/localtime:/etc/localtime'
-            - 'data:/var/lib/tor'
-        restart: unless-stopped
-        image: 'mrmariomichel/tor-relay:latest'
+  tor-relay:
+    ports:
+      - "127.0.0.1:9050:9050"
+      - "9001:9001"
+      - "9030:9030"
+      - "127.0.0.1:9051:9051"
+    volumes:
+      - "./conf/torrc:/etc/tor/torrc"
+      - "/etc/localtime:/etc/localtime"
+      - "data:/var/lib/tor"
+    restart: unless-stopped
+    image: "mrmariomichel/tor-relay:latest"
 volumes:
-    data:
-        external: false
+  data:
+    external: false
