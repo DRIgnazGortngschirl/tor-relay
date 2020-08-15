@@ -1,4 +1,7 @@
 # TOR Relay ![TOR](https://cloud.githubusercontent.com/assets/8005290/25584874/cd743dcc-2e65-11e7-8b9a-5f0f3be929b9.png) 
+
+![](https://images.microbadger.com/badges/image/mrmariomichel/tor-relay.svg)
+
 This docker container is a dockerized version of an Tor relay and implements "The Onion Routing"
 
 See https://hub.docker.com/r/mrmariomichel/tor-relay
