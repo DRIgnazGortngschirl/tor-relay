@@ -1,4 +1,4 @@
-# TOR Relay ![TOR](https://cloud.githubusercontent.com/assets/8005290/25584874/cd743dcc-2e65-11e7-8b9a-5f0f3be929b9.png) | v0.4.6.7-r1 @ Alpine Linux
+# TOR Relay ![TOR](https://cloud.githubusercontent.com/assets/8005290/25584874/cd743dcc-2e65-11e7-8b9a-5f0f3be929b9.png) | v0.4.6.9-r0 @ Alpine Linux
 
 ![](https://images.microbadger.com/badges/image/mrmariomichel/tor-relay.svg)
 
