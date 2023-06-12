@@ -4,7 +4,7 @@
 
 This docker container is a dockerized version of an Tor relay and implements "The Onion Routing"
 
-See https://hub.docker.com/r/mrmariomichel/tor-relay
+See [DockerHub](https://hub.docker.com/r/drignazgortngschirl/tor-relay/tags)
 
 1. Clone the repo. ```git clone https://github.com/MrMarioMichel/tor-relay ```
 2. Configure in [conf/torrc](https://github.com/MrMarioMichel/tor-relay/blob/master/conf/torrc) needed things (change some setings with your favorite text editor).
