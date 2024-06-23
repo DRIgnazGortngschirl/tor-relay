@@ -11,7 +11,7 @@ services:
       - "/etc/localtime:/etc/localtime"
       - "data:/var/lib/tor"
     restart: unless-stopped
-    image: "mrmariomichel/tor-relay:latest"
+    image: "drignazgortngschirl/tor-relay:latest"
 volumes:
   data:
     external: false
